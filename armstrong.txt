@@ -1,0 +1,30 @@
+package armstrong;
+import java.util.Scanner;
+public class Armstrong {//class declaration
+    
+
+    public static void main(String[] args) {
+        
+int r,m,sum=0;//input
+int n;
+System.out.print("enter number to check :");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+        m=n;
+while(m!=0)
+{
+    r=m%10;
+    sum+=Math.pow(r,3);
+    m=m/10;
+    
+    
+    
+}      
+    if(sum == n)
+     System.out.print(n+"is armstrong no.");
+    else
+    {
+     System.out.print(n+"is not an armstrong");
+    }
+ }
+}
