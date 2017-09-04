@@ -1,0 +1,33 @@
+
+
+package fibonacci;
+
+public class Fibonacci {
+
+    public static void main(String[] args) {
+
+
+
+                        System.out.println("fibonacci series");
+                        int x=0;
+                        int y=1;
+                        //logic and output
+                        while(true)
+                        {
+                            if(y>=200)
+                            {
+                                System.out.print(" "+x);
+                                break;
+                                
+                        }
+                          else  
+                        {
+                            System.out.print(" " +x+" "+y);
+                            x+=y;
+                            y+=x;
+                            
+                        }
+                }
+    
+}
+}
