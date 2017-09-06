@@ -1,0 +1,71 @@
+package calculator;
+import java.util.Scanner;
+
+public class Calculator {
+   public static void main(String[] args) 
+ {
+
+       double n1,n2,result;
+       System.out.println("enter the two numbers :");
+       
+       Scanner sc=new Scanner(System.in);
+       n1=sc.nextDouble();
+       n2=sc.nextDouble();
+       System.out.println("1.add\n2.sub\n3.mutl\n4.div\nEnter the a choice :");
+       int ch;
+       ch=sc.nextInt();
+       switch(ch)
+       {
+           case 1:
+           {
+               result=add(n1,n2);
+               System.out.println("add is :"+result);
+               break;
+           }
+           case 2:
+           {
+               result=sub(n1,n2);
+               System.out.println("sub is:"+result);
+               break;
+           }
+       
+           case 3:
+           {
+               result=mult(n1,n2);
+               System.out.println("mult is:"+result);
+               break;
+           }
+       
+           case 4:
+           {
+               result=div(n1,n2);
+               System.out.println("div is :"+result);
+               break;
+            }
+       }
+ }
+   public static double add(double a,double b){
+   return a+b;
+   
+} 
+   public static double sub(double a,double b){
+   return a-b;
+   
+}  
+    public static double mult(double a,double b){
+   return a*b;
+   
+} 
+ public static double div(double a,double b){
+   if(b==0){
+                System.out.println("division cannot take place :");
+   return 0;
+   }
+   else{
+       return a/b;
+       
+   }
+      
+   } 
+
+}
